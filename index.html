@@ -1,34 +1,307 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Pizza paradise!</title>
-</head>
-<body>
-    <!DOCTYPE html>
+ <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>🍕Pizza Paradise</title>
-    <link rel="stylesheet" href="styles.css">
+    <style>
+        
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-size: cover;
+}
+
+.pizza-title {
+    color: #ff6600; 
+    font-weight: bold;
+    font-size: 36px;
+}
+
+h3{
+    color:rgb(0, 0, 0);
+    font-size: 20px;
+    text-align: center;
+}
+
+.pizzaheading{
+    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    color: darkred;
+    text-align: center;
+}
+.history{
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    color: indigo;
+    font-weight: bold;
+}
+.navbar {
+    background-color: #ff6600;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+
+}
+
+h2 {
+    font-size: 24px;
+    color: #003636;
+    margin: 20px 0;
+}
+
+p {
+    font-size: 16px;
+    color: #000000;
+    margin: 15px 0;
+    font-weight: bolder;
+    text-align: center;
+}
+
+
+
+@media screen and (max-width: 768px) {
+    h2 {
+        font-size: 30px;
+        margin: 15px 0;
+    }
+
+    p {
+        font-size: 16px;
+        margin: 10px 0;
+    }
+}
+
+.logo a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 24px;
+    font-weight: bold;
+}
+
+.nav-links {
+    list-style: none;
+    padding: 0;
+    display: flex;
+}
+
+.nav-links li {
+    margin-right: 20px;
+}
+
+.nav-links a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 16px;
+}
+
+.text{
+    background-color: #ffffff;
+    color:#000000;
+    border-radius: 4px;
+    padding:20px 0px 20px 0px;
+}
+
+header {
+    background-color: #ff6600;
+    color: #fff;
+    text-align: center;
+    padding: 0 0 60px 0 ;
+    background-image: url("pizzas.jpg");
+}
+
+.menu {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin: 20px;
+}
+
+.pizza-item {
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    padding: 20px;
+    margin: 10px;
+    text-align: center;
+    transition: transform 0.2s;
+}
+
+.pizza-item:hover {
+    transform: scale(1.05);
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+.order-button {
+    background-color: #ff6600;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    font-size: 16px;
+    border-radius: 5px;
+}
+
+.order-button:hover {
+    background-color: #ff3300;
+}
+
+.order {
+    text-align: center;
+    margin: 20px;
+}
+
+footer {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 10px 0;
+}
+
+.specials {
+    text-align: center;
+    padding: 20px;
+    background-color: rgba(255, 255, 255, 0.8);
+    margin: 20px;
+}
+
+.specials-container {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+.special-item {
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    padding: 20px;
+    text-align: center;
+    transition: transform 0.2s;
+}
+
+.special-item:hover {
+    transform: scale(1.05);
+}
+
+.special-item img {
+    max-width: 100%;
+    height: auto;
+}
+
+.testimonials {
+    text-align: center;
+    padding: 20px;
+    background-color: rgba(255, 255, 255, 0.8);
+    margin: 20px;
+}
+
+.testimonial {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    margin: 20px;
+}
+
+.testimonial img {
+    max-width: 100px;
+    height: auto;
+    border-radius: 50%;
+}
+
+.customer-name {
+    font-weight: bold;
+    margin-top: 10px;
+}
+
+.contact {
+    text-align: center;
+    padding: 20px;
+    background-color: rgba(255, 255, 255, 0.8);
+    margin: 20px;
+}
+
+.contact h2 {
+    color: #ff6600; /* Heading color */
+    font-size: 28px;
+    margin-bottom: 20px;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.footer{
+    color:#fff;
+}
+
+label, input, textarea {
+    margin: 10px;
+    width: 100%;
+    max-width: 400px;
+}
+
+label {
+    font-weight: bold; /* Make labels bold */
+}
+
+input[type="text"],
+input[type="email"],
+textarea {
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    font-size: 16px;
+    transition: border-color 0.3s;
+}
+
+input[type="text"]:focus,
+input[type="email"]:focus,
+textarea:focus {
+    border-color: #ff6600; /* Highlight the border color on focus */
+}
+
+.contact-button {
+    background-color: #ff6600;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    font-size: 16px;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+}
+
+.contact-button:hover {
+    background-color: #ff3300; }
+    </style>
 </head>
 <body>
-    <header>
+    <header class="main">
             <nav class="navbar">
                 <div class="logo">
                     <a href="index.html">Pizza Paradise!</a>
                 </div>
                 <ul class="nav-links">
+                    <li class="order-button"><a href="#order">Order Now</a></li>
                     <li><a href="#history">History of Pizza</a></li>
                     <li><a href="#menu">Menu</a></li>
-                    <li><a href="#history">History</a></li>
+                    <li ><a href="#testimonials">Testimonials</a></li>
                     <li><a href="#contact">Contact</a></li>
+                    <li ><a href="#about">About us</a></li>
                 </ul>
             </nav>
-        <h1>Welcome to Pizza Paradise!🍕🍕🍕</h1>
-        <h3>Your one-stop destination for the best pizza in town!</h3>
+        <h1 class="text">Welcome to Pizza Paradise!🍕🍕🍕</h1>
+        <h3 class="text">Your one-stop destination for the best pizza in town!</h3>
     </header>
 
     <main>
@@ -41,26 +314,42 @@
         </article>
     </main>
     
-    <section class="menu">
+    <section id="menu" class="menu">
         <div>
-            <h2>Our Popular Ones!</h2>
+            <h2>Our Popular Ones! 👉</h2>
         </div>
         <br/>
-        <div class="pizza-item">
-            <img src="Pizza_Margherita.jpg" alt="Margherita Pizza" width="200px">
-            <h3>Margherita Pizza</h3>
-            <p>A classic favorite topped with basil and mozzarella cheese. </p>
-            <button class="order-button" onclick="orderPizza('Margherita Pizza')">Order Now</button>
-        </div>
         <div class="pizza-item">
             <img src="peppe.jpeg" alt="Pepperoni Pizza">
             <h3>Pepperoni Pizza</h3>
             <p>Simple and delicious with fresh pepperoni and cheese.</p>
-            <button class="order-button" onclick="orderPizza('Pepperoni Pizza')">Order Now</button>
+            <button class="order-button">Order Now</button>
+        </div>        
+        <div class="pizza-item">
+            <img src="Pizza_Margherita.jpg" alt="Margherita Pizza" width="200px">
+            <h3>Margherita Pizza</h3>
+            <p>A classic favorite topped with basil and mozzarella cheese. </p>
+            <button class="order-button">Order Now</button>
         </div>
-        </section>
+        <div class="pizza-item">
+            <img src="Farmhouse.png" alt="Farmhouse" width="200px">
+            <h3>Farmhouse</h3>
+            <p>Delightful combination of onion, capsicum, tomato & grilled mushroom.</p>
+            <button class="order-button">Order Now</button>
+        </div>
+        <div class="pizza-item">
+            <img src="paneer.jpg" alt="Peppy Paneer" width="200px">
+            <h3>Peppy Paneer</h3>
+            <p>Flavorful trio of juicy paneer, crisp capsicum with spicy red paprika.</p>
+            <button class="order-button">Order Now</button>
+        </div>
+    </section>    
+        <br/>
+        <br/>
+        <br/>
 
-        <section class="specials">
+
+        <section class="specials" >
             <div>
                 <h2>Today's Specials</h2>
             </div>
@@ -69,22 +358,22 @@
                     <img src="special1.jpg" alt="Special Pizza 1">
                     <h3>Veggie Extravaganza</h3>
                     <p>Black olives, capsicum, onion, grilled mushroom, corn, tomato, jalapeno & extra cheese! All in one!</p>
-                    <button class="order-button" onclick="orderPizza('Veggie Extravaganza')">Order Now</button>
+                    <button class="order-button">Order Now</button>
                 </div>
                 <div class="special-item">
                     <img src="special2.jpg" alt="Special Pizza 2">
                     <h3>Non Veg Supreme</h3>
                     <p>Supreme combination of black olives, onion, capsicum, grilled mushroom, pepper barbecue chicken and peri-peri!</p>
-                    <button class="order-button" onclick="orderPizza('Non Veg Supreme')">Order Now</button>
+                    <button class="order-button">Order Now</button>
                 </div>
             </div>
         </section>
     
-        <section class="testimonials">
+        <section class="testimonials" id="testimonials">
             <h2>What Our Customers Say</h2>
             <div class="testimonial">
                 <img src="man.jpg" alt="Customer 1">
-                <p>"Pizza Paradise is my go-to place for delicious pizza. Their Margherita is the best I've ever had!"</p>
+                <p>"Pizza Paradise is my go-to place for delicious pizza. Their Veggie Extravaganza is the best I've ever had!"</p>
                 <p class="customer-name">- John Doe</p>
             </div>
             <div class="testimonial">
@@ -113,9 +402,48 @@
     </section>
 
     <footer>
-        <p>&copy; 2023 Pizza Paradise</p>
+        <p class="footer" id="about">At Pizza Paradise, we are passionate about crafting the perfect pizza experience for you. With decades of culinary expertise, we take pride in creating mouthwatering pizzas that delight your taste buds. Our journey began with a simple idea: to serve the finest pizzas made from the freshest ingredients. Today, we continue to uphold that tradition, offering a diverse menu of classic and innovative flavors to satisfy every craving. Here, it's not just about food; it's about creating memories with every slice. Join us on a flavorful journey, and discover why we're your ultimate destination for pizza perfection.</p>
+        <p class="footer">&copy; 2023 Pizza Paradise</p>
     </footer>
 
-    <script src="script.js"></script>
+    <script>
+function askdetails() {
+    let name = prompt("What's your name?");
+    let email = prompt("What's your email address?");
+    let cart = [];
+
+    while (true) {
+        let pizza = prompt("Enter the name of the pizza you want to add to your cart:");
+        cart.push(pizza);
+
+        alert(pizza + " has been added to your cart, " + name + "!");
+        let question = prompt("Do you wish to add anything else to your cart? (Yes/No)");
+
+        if (question !== "Yes" && question !== "yes") {
+            break;
+        }
+    }
+
+    let cartItems = cart.join(", ");
+    alert("You have added the following items to your cart: " + cartItems);
+    confirmOrder(name, email);
+}
+
+function confirmOrder(name, email) {
+    let question = prompt("Would you like to confirm your order now? (Yes/No)");
+
+    if (question === "Yes" || question === "yes") {
+        alert("Thanks for placing an order, " + name + "! The order details have been sent to " + email + ". Enjoy your meal!");
+    } else {
+        alert("Your order has not been confirmed. If you change your mind, feel free to click the 'Order Now' button again.");
+    }
+}
+
+let orderButtons = document.querySelectorAll(".order-button");
+orderButtons.forEach(function(button) {
+    button.addEventListener("click", askdetails);
+});
+
+</script>
 </body>
 </html>
