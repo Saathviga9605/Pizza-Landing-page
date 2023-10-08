@@ -11,44 +11,104 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Pizza Paradise</title>
+    <title>🍕Pizza Paradise</title>
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
     <header>
             <nav class="navbar">
                 <div class="logo">
-                    <a href="#home">Pizza Paradise</a>
+                    <a href="index.html">Pizza Paradise!</a>
                 </div>
                 <ul class="nav-links">
-                    <li><a href="#about">About</a></li>
+                    <li><a href="#history">History of Pizza</a></li>
                     <li><a href="#menu">Menu</a></li>
                     <li><a href="#history">History</a></li>
                     <li><a href="#contact">Contact</a></li>
                 </ul>
             </nav>
-        <h1>Welcome to Pizza Paradise</h1>
-        <p>Your one-stop destination for the best pizza in town!</p>
+        <h1>Welcome to Pizza Paradise!🍕🍕🍕</h1>
+        <h3>Your one-stop destination for the best pizza in town!</h3>
     </header>
+
+    <main>
+        <article id="history">
+            <section>
+                <h2 class="pizzaheading">Pizza's Cross-Continental Journey: A Flavorful Tale</h2>
+                <p class="history">Pizza, with its rich and flavorful history, has become an iconic dish beloved worldwide. Its origins can be traced back to ancient civilizations like Greece and Rome, where flatbreads were topped with olive oil, spices, and local ingredients. However, the modern pizza we know today took shape in 18th-century Naples, Italy. It was there that the classic Margherita pizza, with its tomato, mozzarella, and basil toppings, gained popularity, even earning royal approval from Queen Margherita in 1889.</p>
+             <p class="history">Pizza's journey continued as Italian immigrants brought their cherished recipes to the United States in the late 19th century. It underwent further evolution, giving rise to iconic American pizza styles such as New York and Chicago deep-dish. Over the years, pizza's global appeal led to countless regional variations, making it a beloved and diverse culinary phenomenon enjoyed by people of all cultures.</p>
+            </section>
+        </article>
+    </main>
     
     <section class="menu">
-        <h2>Our Delicious Menu</h2>
-        <div class="pizza-item">
-            <img src="pizza1.jpg" alt="Pepperoni Pizza">
-            <h3>Pepperoni Pizza</h3>
-            <p>A classic favorite topped with pepperoni and cheese.</p>
-            <button class="order-button" onclick="orderPizza('Pepperoni Pizza')">Order Now</button>
+        <div>
+            <h2>Our Popular Ones!</h2>
         </div>
+        <br/>
         <div class="pizza-item">
-            <img src="pizza2.jpg" alt="Margherita Pizza">
+            <img src="Pizza_Margherita.jpg" alt="Margherita Pizza" width="200px">
             <h3>Margherita Pizza</h3>
-            <p>Simple and delicious with fresh tomatoes and basil.</p>
+            <p>A classic favorite topped with basil and mozzarella cheese. </p>
             <button class="order-button" onclick="orderPizza('Margherita Pizza')">Order Now</button>
         </div>
-    </section>
+        <div class="pizza-item">
+            <img src="peppe.jpeg" alt="Pepperoni Pizza">
+            <h3>Pepperoni Pizza</h3>
+            <p>Simple and delicious with fresh pepperoni and cheese.</p>
+            <button class="order-button" onclick="orderPizza('Pepperoni Pizza')">Order Now</button>
+        </div>
+        </section>
+
+        <section class="specials">
+            <div>
+                <h2>Today's Specials</h2>
+            </div>
+            <div class="specials-container">
+                <div class="special-item">
+                    <img src="special1.jpg" alt="Special Pizza 1">
+                    <h3>Veggie Extravaganza</h3>
+                    <p>Black olives, capsicum, onion, grilled mushroom, corn, tomato, jalapeno & extra cheese! All in one!</p>
+                    <button class="order-button" onclick="orderPizza('Veggie Extravaganza')">Order Now</button>
+                </div>
+                <div class="special-item">
+                    <img src="special2.jpg" alt="Special Pizza 2">
+                    <h3>Non Veg Supreme</h3>
+                    <p>Supreme combination of black olives, onion, capsicum, grilled mushroom, pepper barbecue chicken and peri-peri!</p>
+                    <button class="order-button" onclick="orderPizza('Non Veg Supreme')">Order Now</button>
+                </div>
+            </div>
+        </section>
+    
+        <section class="testimonials">
+            <h2>What Our Customers Say</h2>
+            <div class="testimonial">
+                <img src="man.jpg" alt="Customer 1">
+                <p>"Pizza Paradise is my go-to place for delicious pizza. Their Margherita is the best I've ever had!"</p>
+                <p class="customer-name">- John Doe</p>
+            </div>
+            <div class="testimonial">
+                <img src="woman.jpg" alt="Customer 2">
+                <p>"I can't resist the Pepperoni Pizza at Pizza Paradise. It's a taste of heaven!"</p>
+                <p class="customer-name">- Jane Smith</p>
+            </div>
+        </section>
+    
+        <section class="contact" id="contact">
+            <h2>Contact Us</h2>
+            <form>
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name" required>
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+                <label for="message">Message:</label>
+                <textarea id="message" name="message" required></textarea>
+                <button class="contact-button" type="submit">Send</button>
+            </form>
+        </section>
 
     <section class="order">
-        <h2>Place Your Order</h2>
+        <h2>Place Your Order now! Yummy pizza awaits!</h2>
         <div id="order-message"></div>
     </section>
 
@@ -57,8 +117,5 @@
     </footer>
 
     <script src="script.js"></script>
-</body>
-</html>
-
 </body>
 </html>

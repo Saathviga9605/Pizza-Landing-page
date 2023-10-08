@@ -2,9 +2,7 @@
 function orderPizza(pizzaName) {
     const message = `You ordered a ${pizzaName}! Enjoy your meal! 🍕`;
     document.getElementById("order-message").innerText = message;
-    setTimeout(() => {
-        document.getElementById("order-message").innerText = "";
-    }, 3000);
+    
 }
 
 
@@ -34,3 +32,8 @@ document.addEventListener("scroll", function () {
         }
     });
 });
+
+function orderPizza(pizzaName) {
+    const message = `You ordered a ${pizzaName}! Enjoy your meal! 🍕`;
+    document.getElementById("order-message").innerText = message;
+}
